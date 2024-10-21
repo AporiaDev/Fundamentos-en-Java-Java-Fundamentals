@@ -122,3 +122,139 @@ public class Concatenacion{
 
 Con esto que se ha enseñado se lleva a cabo una gran parte de fundamentos en java, en la próxima sesión hablaremos de las estructuras repetitivas y secuenciales en Java. Es muy importante tener claro el concepto de secuencia y de buble para poder comprender de una forma más rápida la sesión que ya viene.
 
+
+#Segunda sesión en Java
+
+# Estructuras de control
+
+En esta sección trabajaremos con estructuras de tipo **secuencial** y de **repetición** 
+
+## Estructuras secuenciales 
+
+leen cada sentencia de código de forma secuencial, antes de entrar de lleno a hablar sobre los tipos de estructura secuencial debemos tocar los **operadores relacionales** y **operadores lógicos**, los cuales ayudaran a que la estructura secuencial tome un camino más lógico y de entendimiento en las variables, entre los tipos de estructura secuencial se encuentran las sentencias; **if-else, if-else-if y switch.**
+
+**Operadores relacionales y de igualdad**
+*  (>) mayor que.
+*  (<) menor que.
+*  (>=) mayor o igual que.
+*  (<=) menor o igual que.
+*  (==) igual que.
+*  (!=) Distinto de.
+
+**Operadores lógicos**
+ * && es and.
+ * || or.
+ * ! not.
+
+Si el lector necesita ejemplos de ejecución de estos operadores en la sección de archivo, se encuentra "Estructuras de control" que cuenta con ejemplos de usos de estos operadores.
+
+**Sentencias**
+
+* Sentencia if-else: esta sentencia, toma el caso condicional " si sucede esto debo hacer esto, pero si no ocurre la condición hago esto"  y si se quiere comprender en orden se debe tener en cuenta lo siguiente:
+
+```Java
+
+1 import java.util.Scanner;
+
+2 public class SentenciaIf{
+   3 public static void main(String args []){
+      4 int edad;
+      5 System.out.print("ingrese su edad: ");
+         6  edad = scanner.nextInt();
+      7 if ( edad >= 18 ){
+          8 System.out.print("Usted es mayor de edad");
+      9 }else {
+         10 System.out.print("Usted no es mayor de edad\n");
+        }
+   }
+}
+```
+Con los números en cada linea de código se indica el orden de ejecución 
+
+* Sentencia if-else: esta sentencia, toma el caso condicional " si sucede esto debo hacer esto, en otra forma si no se cumple el condicional anterior hago esto, pero si no ocurre la condición hago esto"  y si se quiere comprender en orden se debe tener en cuenta lo siguiente:
+
+```Java
+
+1 import java.util.Scanner;
+
+2 public class SentenciaIf{
+   3 public static void main(String args []){
+      4 System.out.print("Ingrese un numero de mes: ");
+          5 int mes1 = scanner.nextInt();
+      6 if (mes1 == 1){
+          7 System.out.print("Enero"); 
+     8  }else if (mes1 == 2) {
+     9      System.out.print("Febrero");
+     10 }else{
+     11     System.out.print("Numero no valido"); 
+        }  
+   }
+}
+```
+
+* Sentencia switch: esta sentencia, toma el caso condicional por medio de casos  y si se quiere comprender en orden se debe tener en cuenta lo siguiente:
+
+```Java
+
+1 import java.util.Scanner;
+
+2 public class SentenciaIf{
+   3 public static void main(String args []){
+      4 System.out.print("Ingrese un numero de mes: ");
+      5     int mes = scanner.nextInt();
+        
+      6 switch (mes) {
+      7     case 1: System.out.print("Enero");
+      8         break;
+      9     case 2: System.out.print("Febrero");
+      10         break;
+      11    case 3: System.out.print("Abril");
+      12         break;
+      13    case 4: System.out.print("Junio");
+      14         break;        
+      15    default: System.out.print("Numero no valido");
+      16         break;
+        } 
+   }
+}
+```
+## Estructuras de repetición
+Se ejecuta un conjunto el cual será repetido hasta cumplir cierta condición, algunas de las sentencias que se dan aquí son sentencias de tipo; **while, do-while, y for**
+
+**Sentencias**
+
+Estas sentencias que son repetitivas, hay que entender que van a hacer una tarea hasta cumplir la condición dada, o en algunos casos hasta que no se cumpla la condición dada, maneras diferente sintaxis pero al fin y al cabo son bucles
+
+**Comprensión de un bucle**
+
+```Java
+import java.util.Scanner;
+
+public class Bucle{
+   public static void main (String args[]){
+        for (int num2 = 0; num2 <=10; num2++){
+            System.out.print("\nTexto " + num2); 
+        }//Vuelve a probar  for cada que hace un intento
+
+   }
+}
+
+```
+* for ( VARIABLE DE CONTROL ; CONDICIÓN ; MODIFICADOR ){
+    SENTENCIAS A REALIZAR}
+* do-while
+    do{Sentencia}while(Condicion);
+*  while
+    While(condicion){Sentencias a realizar hasta que se cumpla la condicion}
+ 
+**Break and continue**
+* Break: Permite terminar un bucle por completo, no importa si quedan repeticiones.
+* Continue : Interrumpe el ciclo momentáneo, pero continua el bucle.
+
+```Java
+        for (int i = 1; i <= 10; i++) {
+            if (i == 5) {
+                continue; // Salta el número 5
+            }
+        System.out.println(i);
+```
