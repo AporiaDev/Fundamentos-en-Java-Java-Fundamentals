@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Arreglos{
+public class TerceraSesionArreglos{
     public static void main (String args[]){
         Scanner scanner = new Scanner(System.in);
 
