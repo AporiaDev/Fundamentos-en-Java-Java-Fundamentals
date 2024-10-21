@@ -123,7 +123,7 @@ public class Concatenacion{
 Con esto que se ha enseñado se lleva a cabo una gran parte de fundamentos en java, en la próxima sesión hablaremos de las estructuras repetitivas y secuenciales en Java. Es muy importante tener claro el concepto de secuencia y de buble para poder comprender de una forma más rápida la sesión que ya viene.
 
 
-#Segunda sesión en Java
+# Segunda sesión en Java
 
 # Estructuras de control
 
