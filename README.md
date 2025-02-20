@@ -270,3 +270,8 @@ public class Bucle{
 ```
 * Try: contiene la sentencia que puede generar un error o excepción, si ocurre algun error dentro de "try" la sentencia se detiene en ese punto y pasa a la instrucción "catch"
 * Catch: Puede manejar distintos tipos de excepciones
+
+# Tercera sesión
+## Metodos(Funciones)
+
+
