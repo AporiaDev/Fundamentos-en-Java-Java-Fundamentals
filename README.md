@@ -258,3 +258,15 @@ public class Bucle{
             }
         System.out.println(i);
 ```
+***Try-Catch***
+*Maneja errores en tiempo de ejecución, hace que la ejecución continue sin importar el error evitando que se detenga abruptamente
+
+```Java
+   try {
+    // Código que puede causar una excepción
+   } catch (ExceptionTipo ex) {
+    // Código que maneja la excepción
+   }
+```
+*Try: contiene la sentencia que puede generar un error o excepción, si ocurre algun error dentro de "try" la sentencia se detiene en ese punto y pasa a la instrucción "catch"
+*Catch: Puede manejar distintos tipos de excepciones
