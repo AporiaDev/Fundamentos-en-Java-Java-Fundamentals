@@ -271,7 +271,99 @@ public class Bucle{
 * Try: contiene la sentencia que puede generar un error o excepción, si ocurre algun error dentro de "try" la sentencia se detiene en ese punto y pasa a la instrucción "catch"
 * Catch: Puede manejar distintos tipos de excepciones
 
-# Tercera sesión
+
 ## Metodos(Funciones)
+
+# **Arreglos y Listas en Java**
+
+En Java, los arreglos y listas son estructuras de datos utilizadas para almacenar múltiples elementos. A continuación, se explican sus características y diferencias.
+
+## 📌 **Arreglos en Java**
+Un **arreglo (array)** es una estructura de datos que almacena un conjunto de elementos del mismo tipo en posiciones contiguas de memoria.
+
+### 🔹 Características:
+- Tamaño fijo (se define al momento de su creación).
+- Acceso rápido a los elementos mediante índices.
+- Almacenan datos homogéneos.
+
+### 🔹 Declaración y uso de arreglos:
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[] numeros = new int[5]; // Declaración de un arreglo de tamaño 5
+        numeros[0] = 10; // Asignación de valores
+        numeros[1] = 20;
+        
+        // Recorrido del arreglo
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Elemento en índice " + i + ": " + numeros[i]);
+        }
+    }
+}
+```
+
+### 🔹 Declaración e inicialización en una sola línea:
+```java
+int[] numeros = {1, 2, 3, 4, 5};
+```
+
+### 🔹 Arreglos multidimensionales:
+```java
+int[][] matriz = {{1, 2}, {3, 4}};
+System.out.println(matriz[0][1]); // Salida: 2
+```
+
+---
+
+## 📌 **Listas en Java**
+Una **lista (List)** es una estructura de datos dinámica proporcionada por la API de Java a través de la interfaz `List` en el paquete `java.util`.
+
+### 🔹 Características:
+- Tamaño dinámico (se puede agregar o eliminar elementos sin preocuparse por la capacidad).
+- Permite almacenar datos heterogéneos con genéricos (`List<Object>`).
+- Forma parte del **framework de colecciones de Java**.
+
+### 🔹 Implementaciones de List:
+1. **ArrayList**: Basado en un arreglo dinámico (rápido en acceso pero lento en inserciones/eliminaciones).
+2. **LinkedList**: Basado en una lista doblemente enlazada (rápido en inserciones/eliminaciones, más lento en acceso).
+
+### 🔹 Uso de ArrayList:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> nombres = new ArrayList<>();
+        nombres.add("Juan");
+        nombres.add("Ana");
+        nombres.add("Luis");
+        
+        // Recorrer lista con for-each
+        for (String nombre : nombres) {
+            System.out.println(nombre);
+        }
+    }
+}
+```
+
+### 🔹 Uso de LinkedList:
+```java
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> numeros = new LinkedList<>();
+        numeros.add(10);
+        numeros.add(20);
+        numeros.addFirst(5); // Agregar al inicio
+        numeros.addLast(30); // Agregar al final
+        
+        System.out.println(numeros); // Salida: [5, 10, 20, 30]
+    }
+}
+```
+
+---
+
 
 
