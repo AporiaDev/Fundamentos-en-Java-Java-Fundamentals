@@ -47,7 +47,7 @@ Los tipos de datos son las categorías por las cuales yo puedo identificar un el
 
 ![image](https://github.com/user-attachments/assets/52f4c1af-5e01-47fd-bb06-0bda66f50052)
  
-Los tipos de datos byte, short, int y long permiten trabajar con números enteros. Los tipos float y double, se usan para trabajar con valores con punto decimal. El tipo de dato boolean, se utiliza para trabajar con valores de verdad, los únicos valores de tipo boolean son false y true. El tipo de dato char es un carácter Unicode. Unicode es un estándar que define los caracteres necesarios para poder escribir la mayoría de los idiomas.
+Los tipos de datos byte, short, int y long permiten trabajar con números enteros, los tipos float y double, se usan para trabajar con valores con punto decimal. El tipo de dato boolean, se utiliza para trabajar con valores de verdad, los únicos valores de tipo boolean son false y true. El tipo de dato char es un carácter Unicode. Unicode es un estándar que define los caracteres necesarios para poder escribir la mayoría de los idiomas.
 
 **Datos referencia**
 
