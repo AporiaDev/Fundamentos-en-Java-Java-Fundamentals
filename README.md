@@ -115,7 +115,6 @@ public class Concatenacion{
 8. **nextBoolean()** - Lee el siguiente token de entrada como un valor booleano (true o false).
    - Ejemplo: `boolean valorBooleano = scanner.nextBoolean();`
 
-## Comentarios de sesión finales
 **Tipo de comentario en Java :**
  * 1)/* Colección
  * 2)// Una linea
