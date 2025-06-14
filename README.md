@@ -38,7 +38,7 @@ public class HolaMundo{
    }
 }
 ```
-Para facilitar la comprensión de lo que esta sucediendo se invita al lector a trabajar esta wiki en conjunto de Visual Studio Code, todo esto con finalidades practicas.
+Para facilitar la comprensión de lo que esta sucediendo se invita al lector a trabajar esta wiki en conjunto de un entorno de desarrolo o editor de código, todo esto con finalidades practicas.
 
 ## Tipos de datos o varibles en Java
 Los tipos de datos son las categorías por las cuales yo puedo identificar un elemento o variable con el cual será identificado en el sistema ejecutado en nuestra secuencia de programación. En java por excelencia hay dos tipos de datos; **los primitivos o simples y los que son por referencia**.
