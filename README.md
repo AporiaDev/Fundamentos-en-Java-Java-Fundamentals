@@ -1,8 +1,8 @@
-# Primera sesión en Java
+# Java
 
 ## Primer "hola mundo" en Java
 
-Para inicializarnos en el contexto de un lenguaje de programación, nunca esta de más empezar con nuestro primer **"Hola mundo"**, los lenguajes debido a su sintaxis en la mayoría de los casos tienen estructuras distintas, en el caso de Java nosotros inicializamos nuestro **hola mundo** de la siguiente forma: 
+Para inicializarnos en el contexto de un lenguaje de programación, nunca esta de más empezar con nuestro primer **"Hola mundo"**, los lenguajes debido a su sintaxis en la mayoría de los casos tienen estructuras distintas, en el caso de Java nosotros inicializamos nuestro **"Hola mundo"** de la siguiente forma: 
 
 ```Java
 public class HolaMundo{
