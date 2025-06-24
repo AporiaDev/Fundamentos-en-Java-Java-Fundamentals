@@ -381,4 +381,10 @@ public class Main {
 ---
 
 
+### ** Adicionales **
+
+## Uso de Void
+
+Void se utiliza o es necesario cuando no queremos devolver ningun dato, puede ser utilizado para mostrar un mensaje o modificar un valor dentro de los datos con los que estamos trabajando.
+
 
