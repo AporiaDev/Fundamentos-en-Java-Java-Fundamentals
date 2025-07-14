@@ -107,7 +107,12 @@ Cuando el método `main` termina su ejecución:
 - La JVM se apaga y finaliza el proceso.
 
 ---
+## Variables en Java
 
+Las **variables** son espacios de memoria reservados para almacenar datos durante la ejecución de un programa.  
+Cada variable tiene un **tipo de dato** que determina el tipo de información que puede contener (por ejemplo: `int`, `double`, `String`, etc.).
+
+Según el contexto donde se declaren, las variables en Java se clasifican en: Variables de instancia (Fuera de los metodos pero dentro de las clases, son para cada objeto),  Variables de clase(Son las variables estaticas), Variables locales(Son estas que se declaran dentro de los metodos), Variables Parametros(Son estas variables que se retornan en un metodo).
 
 ## Tipos de datos o varibles en Java
 Los tipos de datos son las categorías por las cuales yo puedo identificar un elemento o variable con el cual será identificado en el sistema ejecutado en nuestra secuencia de programación. En java por excelencia hay dos tipos de datos; **los primitivos o simples y los que son por referencia**.
@@ -120,6 +125,8 @@ Los tipos de datos son las categorías por las cuales yo puedo identificar un el
 Los tipos de datos byte, short, int y long permiten trabajar con números enteros, los tipos float y double, se usan para trabajar con valores con punto decimal. El tipo de dato boolean, se utiliza para trabajar con valores de verdad, los únicos valores de tipo boolean son false y true. El tipo de dato char es un carácter Unicode. Unicode es un estándar que define los caracteres necesarios para poder escribir la mayoría de los idiomas.
 
 **Datos referencia**
+
+En Java, las **variables de tipo referencia** son aquellas que **no almacenan directamente un valor**, sino **una dirección de memoria** que apunta a un **objeto** ubicado en el **heap** (memoria dinámica).
 
 ![image](https://github.com/user-attachments/assets/a4a628dd-6484-4a2e-9a71-9d6498e638d6)
 
