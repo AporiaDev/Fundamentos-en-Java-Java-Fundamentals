@@ -483,6 +483,7 @@ Este proceso puede ser:
 ```java
 int i = 10;
 double d = i; // conversión automática (int → double)
+double j = (double) i;  // conversión Manual (int → double)
 System.out.println(d); // 10.0
 ```
 
