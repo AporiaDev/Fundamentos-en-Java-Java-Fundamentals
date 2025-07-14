@@ -130,7 +130,7 @@ En Java, las **variables de tipo referencia** son aquellas que **no almacenan di
 
 ![image](https://github.com/user-attachments/assets/a4a628dd-6484-4a2e-9a71-9d6498e638d6)
 
-## ¿Cómo hacer una concatenación de texto?
+### ¿Cómo hacer una concatenación de texto?
 Una concatenación en java con Strings se hace de la siguiente forma:
 ```Java
 public class Concatenacion{
@@ -142,7 +142,7 @@ public class Concatenacion{
 ```
 Hay que tener en cuenta que puntualmente se deben hacer entre strings, por ejemplo, si tengo un dato booleano debe tener un cambio a String para poder ser concatenado un booleano se pasa a string de con el siguiente comando **Bolean.toString(Valor que se desea cambiar)**.
 
-## Operadores aritméticos
+### Operadores aritméticos
 
 Los operadores aritméticos en Java son muy similares a los de la mayoría de lenguajes de programación, para aclarar de una mejor forma los operadores en Java son los siguientes:
 *  Suma +
@@ -195,10 +195,6 @@ public class Concatenacion{
 **Tipo de comentario en Java :**
  * 1)/* Colección
  * 2)// Una linea
-
-Con esto que se ha enseñado se lleva a cabo una gran parte de fundamentos en java, en la próxima sesión hablaremos de las estructuras repetitivas y secuenciales en Java. Es muy importante tener claro el concepto de secuencia y de buble para poder comprender de una forma más rápida la sesión que ya viene.
-
-
 
 # Estructuras de control
 
@@ -365,19 +361,19 @@ Los metodos en Java son aquellos comportamientos que podemos inferir de unas var
 
 Usamos static porque estamos llamando sin crear un objeto
 
-# **Arreglos y Listas en Java**
+# Arreglos y Listas en Java
 
 En Java, los arreglos y listas son estructuras de datos utilizadas para almacenar múltiples elementos. A continuación, se explican sus características y diferencias.
 
-## 📌 **Arreglos en Java**
+##  Arreglos en Java
 Un **arreglo (array)** es una estructura de datos que almacena un conjunto de elementos del mismo tipo en posiciones contiguas de memoria.
 
-### 🔹 Características:
+### Características:
 - Tamaño fijo (se define al momento de su creación).
 - Acceso rápido a los elementos mediante índices.
 - Almacenan datos homogéneos.
 
-### 🔹 Declaración y uso de arreglos:
+###  Declaración y uso de arreglos:
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -393,12 +389,12 @@ public class Main {
 }
 ```
 
-### 🔹 Declaración e inicialización en una sola línea:
+###  Declaración e inicialización en una sola línea:
 ```java
 int[] numeros = {1, 2, 3, 4, 5};
 ```
 
-### 🔹 Arreglos multidimensionales:
+###  Arreglos multidimensionales:
 ```java
 int[][] matriz = {{1, 2}, {3, 4}};
 System.out.println(matriz[0][1]); // Salida: 2
@@ -406,19 +402,19 @@ System.out.println(matriz[0][1]); // Salida: 2
 
 ---
 
-## 📌 **Listas en Java**
+##  Listas en Java
 Una **lista (List)** es una estructura de datos dinámica proporcionada por la API de Java a través de la interfaz `List` en el paquete `java.util`.
 
-### 🔹 Características:
+###  Características:
 - Tamaño dinámico (se puede agregar o eliminar elementos sin preocuparse por la capacidad).
 - Permite almacenar datos heterogéneos con genéricos (`List<Object>`).
 - Forma parte del **framework de colecciones de Java**.
 
-### 🔹 Implementaciones de List:
+### Implementaciones de List:
 1. **ArrayList**: Basado en un arreglo dinámico (rápido en acceso pero lento en inserciones/eliminaciones).
 2. **LinkedList**: Basado en una lista doblemente enlazada (rápido en inserciones/eliminaciones, más lento en acceso).
 
-### 🔹 Uso de ArrayList:
+###  Uso de ArrayList:
 ```java
 import java.util.ArrayList;
 
@@ -437,7 +433,7 @@ public class Main {
 }
 ```
 
-### 🔹 Uso de LinkedList:
+###  Uso de LinkedList:
 ```java
 import java.util.LinkedList;
 
@@ -454,13 +450,39 @@ public class Main {
 }
 ```
 
----
 
-
-### ** Adicionales **
-
-## Uso de Void
-
+### Uso de Void
 Void se utiliza o es necesario cuando no queremos devolver ningun dato, puede ser utilizado para mostrar un mensaje o modificar un valor dentro de los datos con los que estamos trabajando.
 
+### Funcionamiento Heap y Stack
+
+En Java, las referencias de objetos se almacenan en el stack, mientras que los objetos a los que apuntan viven en el heap. En el caso de los String, los literales como "Ana" se guardan en el String Pool, a menos que se cree una nueva instancia con new, lo cual genera un objeto nuevo en el heap
+
+### Type casting
+# Conversión de Tipos (Casting) en Java
+
+La **conversión de tipos** en Java es el proceso mediante el cual se transforma un valor de un tipo de dato a otro.  
+Este proceso puede ser:
+
+- **Automático** (Widening)
+- **Manual** (Narrowing o casting explícito)
+##  Conversión Automática (Widening Casting)
+
+- Se realiza **automáticamente** cuando se convierte un tipo más pequeño a uno más grande.
+- No hay pérdida de información.
+
+| De         | A           |
+|------------|-------------|
+| `byte`     | `short`     |
+| `short`    | `int`       |
+| `int`      | `long`      |
+| `long`     | `float`     |
+| `float`    | `double`    |
+
+### Ejemplo:
+```java
+int i = 10;
+double d = i; // conversión automática (int → double)
+System.out.println(d); // 10.0
+```
 
