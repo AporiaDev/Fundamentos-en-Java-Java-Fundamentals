@@ -23,8 +23,8 @@ De esta manera podemos hacer nuestro primer **"Hola mundo"** en Java, y vamos a 
 *  **\t** inserta un espacio de tabulación en el texto.
 *  **\n** Salto de linea.
 *  **\r** Inserta lo siguiente.
-*  ** \\** Inserta (\).
-*  ** \"** Inserta (").
+*  **\\** Inserta (\).
+*  **\"** Inserta (").
 
 ```Java
 public class HolaMundo{
