@@ -40,6 +40,75 @@ public class HolaMundo{
 ```
 Para facilitar la comprensión de lo que esta sucediendo se invita al lector a trabajar esta wiki en conjunto de un entorno de desarrolo o editor de código, todo esto con finalidades practicas.
 
+## Ciclo de Vida de un Programa en Java
+
+Cuando se ejecuta un programa en Java, ocurren una serie de procesos internos que el ser humano no ve a simple vista. Estos procesos permiten que el código interactúe correctamente con la computadora a través de la Máquina Virtual de Java (JVM).
+
+---
+
+### 1. Escritura del Código Fuente
+Se escribe el algoritmo en un archivo de texto con extensión `.java`. Este archivo contiene el código fuente escrito en lenguaje Java, legible por humanos.
+
+---
+
+### 2. Compilación
+Se utiliza el compilador de Java (`javac`) para traducir el archivo `.java` a un archivo `.class`.
+
+- El archivo `.class` contiene **bytecode**, un código intermedio optimizado que **no depende del sistema operativo**.
+- Este bytecode puede ser interpretado por cualquier sistema que tenga instalada la JVM.
+
+---
+
+## 3.Carga de Clases
+La JVM inicia el programa y utiliza un componente llamado **Class Loader** para cargar todas las clases necesarias desde los archivos `.class`.
+
+---
+
+## 4. Verificación de Seguridad
+Antes de ejecutar el bytecode, la JVM realiza una verificación de seguridad. Esta asegura que el código:
+
+- No intente acceder a memoria no permitida.
+- Cumpla con las reglas del lenguaje Java.
+
+Esto garantiza que el bytecode es **seguro para ejecutarse**.
+
+---
+
+## 5. Inicialización de Memoria
+La JVM reserva espacio en memoria para ejecutar el programa. En esta etapa:
+
+- Se crean las áreas de memoria: **stack**, **heap**, **metaspace**, etc.
+- Se inicializan los **bloques estáticos** de las clases antes de ejecutar el método `main`.
+
+---
+
+## 6. Ejecución del Programa
+La JVM ejecuta el código empezando desde el método `main`. Durante la ejecución:
+
+- Se crean objetos.
+- Se hacen llamadas a métodos.
+- La JVM administra la memoria de forma dinámica.
+
+---
+
+### 7. Recolección de Basura (Garbage Collection)
+El **Garbage Collector** se encarga de eliminar de la memoria los objetos que ya no están en uso. Esto:
+
+- Optimiza el rendimiento.
+- Evita fugas de memoria.
+
+---
+
+### 8. Finalización
+Cuando el método `main` termina su ejecución:
+
+- Se finalizan todos los hilos activos (si los hay).
+- Se libera la memoria utilizada.
+- La JVM se apaga y finaliza el proceso.
+
+---
+
+
 ## Tipos de datos o varibles en Java
 Los tipos de datos son las categorías por las cuales yo puedo identificar un elemento o variable con el cual será identificado en el sistema ejecutado en nuestra secuencia de programación. En java por excelencia hay dos tipos de datos; **los primitivos o simples y los que son por referencia**.
 
